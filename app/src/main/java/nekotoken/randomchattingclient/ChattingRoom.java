@@ -18,25 +18,25 @@ import java.io.DataOutputStream;
 
 public class ChattingRoom extends AppCompatActivity {
 
-    public final String     IP_ADDRESS  = "192.168.0.19";   // set here
-    public final int        SERVER_PORT = 7777;             // set here too
+    private final String     IP_ADDRESS  = "192.168.0.19";   // set here
+    private final int        SERVER_PORT = 7777;             // set here too
 
-    Button                  sendButton;
-    Button                  closeButton;
-    Button                  newSearchingButton;
-    ScrollView              scrollView;
-    TextView                myTextView;
-    TextView                yourTextView;
-    EditText                editText;
-    Context                 mContext;
+    private Button                  sendButton;
+    private Button                  closeButton;
+    private Button                  newSearchingButton;
+    private ScrollView              scrollView;
+    private TextView                myTextView;
+    private TextView                yourTextView;
+    private EditText                editText;
+    private Context                 mContext;
 
-    Socket                  socket;
-    DataInputThread         dataInputThread;
-    DataOutputThread        dataOutputThread;
-    DataInputStream         dataInputStream;
-    DataOutputStream        dataOutputStream;
-    Handler                 handler;
-    StrictMode.ThreadPolicy threadPolicy;
+    private Socket                  socket;
+    private DataInputThread         dataInputThread;
+    private DataOutputThread        dataOutputThread;
+    private DataInputStream         dataInputStream;
+    private DataOutputStream        dataOutputStream;
+    private Handler                 handler;
+    private StrictMode.ThreadPolicy threadPolicy;
 
     @Override
     protected void onPause() {
