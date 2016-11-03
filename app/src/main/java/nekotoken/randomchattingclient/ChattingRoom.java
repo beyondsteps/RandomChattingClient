@@ -117,6 +117,8 @@ public class ChattingRoom extends AppCompatActivity {
             dataOutputThread.start();
         }catch(Exception e) {
             e.printStackTrace();
+            Toast.makeText(ChattingRoom.this, "서버에 접속할 수 없습니다.", Toast
+                    .LENGTH_SHORT).show();
             finish();
         }
     }
