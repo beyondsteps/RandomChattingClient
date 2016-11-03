@@ -18,8 +18,8 @@ import java.io.DataOutputStream;
 
 public class ChattingRoom extends AppCompatActivity {
 
-    public final String     IP_ADDRESS  = "192.168.0.19";
-    public final int        SERVER_PORT = 7777;
+    public final String     IP_ADDRESS  = "192.168.0.19";   // set here
+    public final int        SERVER_PORT = 7777;             // set here too
 
     Button                  sendButton;
     Button                  closeButton;
